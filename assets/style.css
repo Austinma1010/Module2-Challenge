@@ -1,6 +1,7 @@
 body {
     display:flex;
     flex-direction: column;
+    background-color: darkgrey;
 }
 
 header {
@@ -9,9 +10,13 @@ header {
     background-color: lightblue;
     flex-direction: column;
     max-height: 60px;
+    justify-content: center;
+    border: 2px solid black;
     
-    
-    
+}
+
+header:hover {
+    border: 5px solid black;
 }
 
 .nav {
@@ -19,16 +24,90 @@ header {
     flex-direction: row;
     margin: 15px;
     justify-content: right;
-    
-    border: 15px black;
+    list-style-type: none;
   
     
 }
 
 #button {
     width: auto;
-    border: 5px black;
-    padding: 0px;
+    padding: 2px;
     margin: 15px;
+    
 
 }
+
+#button:hover {
+    border: 2px solid black;
+}
+
+
+#button:active {
+    font-weight: bold;
+}
+
+
+.caption {
+    width: auto;
+    padding: 5px;
+    border: 2px solid black;
+
+}
+
+.caption:hover {
+    border: 5px solid black;
+}
+
+.title {
+    margin: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    justify-content: left;
+  }
+  .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 50px;
+  min-height: 100%;
+  border: 2px solid black;
+  transition: all 0.2s ease-in-out;
+  max-width: 500px;
+  max-height: 500px;
+
+  }
+
+  .column:hover {
+    border: 5px solid black;
+  }
+
+  .column .boxHeader {
+  position: relative;
+  
+  padding: 0.5rem 1rem;
+  
+  
+  transition: all 0.5s ease-in-out;
+  }
+
+  .column .img {
+    position: relative;
+    width:auto;
+    height:auto;
+
+  }
+
+  .text {
+    text-align:center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Austins Portfolio</title>
+        <link rel="stylesheet" href="./assets/reset.css" />
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
 
@@ -11,41 +12,63 @@
 
         <header>
             <h1>Austin Anderson</h1>
-            <nav class="nav"> <!-- Navigation buttons here-->
-                <h4 id="button">About me</h4>
-                <h4 id="button">My Work</h4>
-                <h4 id="button">Contact me</h4>
-                <h4 id="button">Resume</h4>
+            <nav> <!-- Navigation buttons here-->
+                <ul class="nav">
+                    <li id="button">About me</li>
+                    <li id="button">My work</li>
+                    <li id="button">Contact me</li>
+                    <li id="button">Resume</li>
+                </ul>
+                
             </nav>
         </header>
 
         <main>
-            <section>
-                <h2>About Me</h2>
-                <p> Place holder text that will be replaced in near future blah blah scynthian metal never came close to 
-                    matching the great steel of tamriel in the year 1282 last fortnight winter was wild. 
+            <section class="caption">
+                <h2 class="title">About Me</h2>
+                <p class="text"> My Name is Austin and I'm in the process of becoming a web developer! I'm currently 
+                    enrolled in a web developement bootcamp and am creating this portfolio as my second HW Assignment! 
                 </p>
             </section>
-            <summary> <!-- Work goes here-->
-                <h2>My Work</h2>
-                <div> <!--Module 1 project goes here-->
-                    <img src="./assets/Mod2WorkExampleImg.png" alt="previously worked on webpage with working header and nav links">
+
+            <div class="caption">
+
+            <h2 class="title">My Work</h2>
+            <summary class="row">
+                
+                <div class="column">
+                        <h2 class="boxHeader">Module 1 Project</h2>
+                        <img class="img" src="./assets/Mod2WorkExampleImg.png" alt="previously worked on webpage with working header and nav links">
                 </div>
+
+                <div class="column">
+                    <h2 class="boxHeader">PlaceHolder</h2>
+                    <img class="img" src="./assets/Mod2WorkExampleImg.png" alt="previously worked on webpage with working header and nav links">
+            </div>
+
+            <div class="column">
+                <h2 class="boxHeader">PlaceHolder</h2>
+                <img class="img" src="./assets/Mod2WorkExampleImg.png" alt="previously worked on webpage with working header and nav links">
+        </div>
+                
+                
             </summary>
+
+        </div>
         </main>
 
 
 <!-- Contact info inside footer -->
-        <footer>
+        <footer class="caption">
             <div>
-                <h2>Contact Me</h2>
+                <h2 class="title">Contact Me</h2>
             </div>
-            <p>
-                Email:
-                Phone:
-                Website:
-                etc:
-            </p>
+            <ul class="text">
+                <li id="button">Email: austinma2168@gmail.com </li>
+                <li id="button">Phone #: 804-381-0001</li>
+                <li id="button">Website:</li>
+                <li id="button">Github:</li>
+            </ul>
         </footer>
 
 
